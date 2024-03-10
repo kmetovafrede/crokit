@@ -3,37 +3,279 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Broadway&display=swap" rel="stylesheet">
   <title>CroKit</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>CroKit</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Domov</a></li>
-        <li><a href="#">Produkty</a></li>
-        <li><a href="#">O nás</a></li>
-        <li><a href="#">Kontakty</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
+    <header id="domov">
+        <h1>CroKit</h1>
+        <div class="menu-container">
+            <img id="menu-btn" src="img/menu.png" alt="Menu">
+            <ul class="menu-content">
+                <li><a href="#domov">Domov</a></li>
+                <li><a href="#produkty">Produkty</a></li>
+                <li><a href="about.html">O nás</a></li>
+                <li><a href="contact.html">Kontakty</a></li>
+                <li><a href="login.html">Prihlásiť sa</a></li>
+                <li><a href="cart.html">Môj košík</a></li>
+            </ul>
+        </div>
+    </header>
+<main>
+    <h2>Korálky</h2>
+    <div class="privesky">
+      <p>Všetky korálky ktoré máme k diposzícií, sú rozličných veľkostí a všetkých farieb na ktoré si len spomeniete. Môžete si vybrať z materiálov ako je:</p>
+      <p> - sklo (základné)</p> 
+      <p> - drevo</p>
+      <p> - plast</p>
+      <p> - kov</p>
+      <p>A taktiež či chcete aby vaše korálky boli:</p>
+      <p> - lesklé (základné)</p>
+      <p> - priehľadné</p>
+      <p> - perleťové</p>
+    </div>
+<h2>Prívesky na náramky</h2>
+<div class="privesky">
+  <p>Naše prívesky  sú v rozmedzí od 4mm až po 17mm. Pre viac informácií, nás kontaktujte. </p>
+  <p>Prívesky sú vyrobené z kvalitného materiálu, ktorý je odolný voči poškodeniu. </p>
+  <p>Ku každej objednávke dostanete na náramok aj prívesok handmade.</p>
+  <img src="img/my-removebg-preview.png" alt="handmade">
+</div>
+
+    <section class="featured-products">
+      <h2>Mix</h2>
+        <section class="product" id="produkty">
+          <img src="img/skull.png" alt="Lebka" onclick="toggleImageSize(event)">
+          <h2>Lebka</h2>
+          <p>Prívesok na náramok lebka</p>
+          <span>0.80€</span>
+          <button class="addToCartButton">Přidat do kitu</button>
+        </section>
+        <section class="product">
+            <img src="img/clover.webp" alt="Štvorlístok"onclick="toggleImageSize(event)">
+            <h2>Štvorlístok</h2>
+            <p>Prívesok na náramok štvorlístok</p>
+            <span>0.80€</span>
+            <button class="addToCartButton">Přidat do kitu</button>
+          </section>
+        <section class="product">
+            <img src="img/cross.png" alt="Kríž"onclick="toggleImageSize(event)">
+            <h2>Kríž</h2>
+            <p>Prívesok na náramok krížik</p>
+            <span>0.80€</span>
+            <button class="addToCartButton">Přidat do kitu</button>
+          </section> <section class="product">
+            <img src="img/heart1.png" alt="Srdiečko"onclick="toggleImageSize(event)">
+            <h2>Srdce 1</h2>
+            <p>Prívesok na náramok ploché srdiečko</p>
+            <span>0.80€</span>
+            <button class="addToCartButton">Přidat do kitu</button>
+          </section>
+          <section class="product">
+            <img src="img/srdce.png" alt="Srdce 2"onclick="toggleImageSize(event)">
+            <h2>Srdce 2</h2>
+            <p>Prívesok na náramok hrubé srdiečko</p>
+            <span>0.80€</span>
+            <button class="addToCartButton">Přidat do kitu</button>
+          </section>
+          <section class="product">
+            <img src="img/srdcer.png" alt="Srdce 2"onclick="toggleImageSize(event)">
+            <h2>Srdce 3</h2>
+            <p>Prívesok na náramok hrubé vyrezané srdiečko</p>
+            <span>0.80€</span>
+            <button class="addToCartButton">Přidat do kitu</button>
+          </section>
+          <section class="product">
+            <img src="img/paw.png" alt="Labka"onclick="toggleImageSize(event)">
+            <h2>Labka</h2>
+            <p>Prívesok na náramok labka</p>
+            <span>0.80€</span>
+            <button class="addToCartButton">Přidat do kitu</button>
+          </section>
+          <section class="product">
+            <img src="img/tree.png" alt="Strom života"onclick="toggleImageSize(event)">
+            <h2>Strom života</h2>
+            <p>Prívesok na náramok strom života</p>
+            <span>0.80€</span>
+            <button class="addToCartButton">Přidat do kitu</button>
+          </section>
+          <section class="product">
+            <img src="img/key.png" alt="Kľúčik"onclick="toggleImageSize(event)">
+            <h2>Kľúčik</h2>
+            <p>Prívesok na náramok Kľúčik</p>
+            <span>0.80€</span>
+            <button class="addToCartButton">Přidat do kitu</button>
+          </section>
+          <section class="product">
+            <img src="img/hamsha.png" alt="Hamsha"onclick="toggleImageSize(event)">
+            <h2>Hamsha</h2>
+            <p>Prívesok na náramok hamsha</p>
+            <span>0.80€</span>
+            <button class="addToCartButton">Přidat do kitu</button>
+          </section>
+          <section class="product">
+            <img src="img/dievca.png" alt="Dievčatko"onclick="toggleImageSize(event)">
+            <h2>Dievča</h2>
+            <p>Prívesok na náramok dievča</p>
+            <span>0.80€</span>
+            <button class="addToCartButton">Přidat do kitu</button>
+          </section>
+          <section class="product">
+            <img src="img/chlapec.png" alt="Chlapček"onclick="toggleImageSize(event)">
+            <h2>Chlapec</h2>
+            <p>Prívesok na náramok chlapec</p>
+            <span>0.80€</span>
+            <button class="addToCartButton">Přidat do kitu</button>
+          </section>
+      <section class="product">
+        <img src="img/kruzok.png" alt="Krúžok"onclick="toggleImageSize(event)">
+        <h2>Krúžok</h2>
+        <p>Prívesok na náramok v tvare krúžsku s párom a mesiačikom</p>
+        <span>0.80€</span>
+        <button class="addToCartButton">Přidat do kitu</button>
+      </section>
+        </section>
+
+        <section class="pets-collection">
+          <h2>Zvieratká</h2>
+            <section class="product">
+              <img src="img/hauko.png" alt="Psík"onclick="toggleImageSize(event)">
+              <h2>Psík</h2>
+              <p>Prívesok na náramok v tvare psíka.</p>
+              <span>0.80€</span>
+              <button class="addToCartButton">Přidat do kitu</button>
+            </section>
+            <section class="product">
+              <img src="img/cica.png" alt="Mačička"onclick="toggleImageSize(event)">
+              <h2>Mačička</h2>
+              <p>Prívesok na náramok v tvare mačičky</p>
+              <span>0.80€</span>
+              <button class="addToCartButton">Přidat do kitu</button>
+            </section>
+            <section class="product">
+              <img src="img/motylik.png" alt="Motýlik"onclick="toggleImageSize(event)">
+              <h2>Motýlik</h2>
+              <p>Prívesok na náramok v tvare motýlika</p>
+              <span>0.80€</span>
+              <button class="addToCartButton">Přidat do kitu</button>
+            </section>
+            <section class="product">
+              <img src="img/korytnacka.png" alt="Korytnačka 1"onclick="toggleImageSize(event)">
+              <h2>Korytnačka 1</h2>
+              <p>Prívesok na náramok v tvare korytnačky</p>
+              <span>0.80€</span>
+              <button class="addToCartButton">Přidat do kitu</button>
+            </section>
+            <section class="product">
+              <img src="img/korytnacka2.png" alt="Korytnačka 2"onclick="toggleImageSize(event)">
+              <h2>Korytnačka 2</h2>
+              <p>Prívesok na náramok v tvare korytnačky</p>
+              <span>0.80€</span>
+              <button class="addToCartButton">Přidat do kitu</button>
+            </section>
+            <section class="product">
+              <img src="img/panda.png" alt="Panda"onclick="toggleImageSize(event)">
+              <h2>Panda</h2>
+              <p>Prívesok na náramok v tvare pandy</p>
+              <span>0.80€</span>
+              <button class="addToCartButton">Přidat do kitu</button>
+            </section>
+        </section>
+  
+
+  
+  <section class="zodiac-signs">
+    <h2>Znamenia zverokruhu</h2>
     <section class="product">
-      <img src="product1.jpg" alt="Product 1">
-      <h2>Product 1</h2>
-      <p>Description of Product 1</p>
-      <span>$19.99</span>
-      <button>Add to Cart</button>
+      <img src="img/baran.png" alt="Baran"onclick="toggleImageSize(event)">
+      <h2>Baran</h2>
+      <p>Prívesok na náramok znamenia baran</p>
+      <span>0.80€</span>
+      <button class="addToCartButton">Přidat do kitu</button>
+    </section>
+      <section class="product">
+      <img src="img/byk.png" alt="Býk"onclick="toggleImageSize(event)">
+      <h2>Býk</h2>
+      <p>Prívesok na náramok znamenia býk</p>
+      <span>0.80€</span>
+      <button class="addToCartButton">Přidat do kitu</button>
     </section>
     <section class="product">
-      <img src="product2.jpg" alt="Product 2">
-      <h2>Product 2</h2>
-      <p>Description of Product 2</p>
-      <span>$24.99</span>
-      <button>Add to Cart</button>
+      <img src="img/blizenec.png" alt="Blíženec"onclick="toggleImageSize(event)">
+      <h2>Blíženec</h2>
+      <p>Prívesok na náramok znamenia blíženec</p>
+      <span>0.80€</span>
+      <button class="addToCartButton">Přidat do kitu</button>
     </section>
-  </main>
+    <section class="product">
+      <img src="img/rak.png" alt="Rak"onclick="toggleImageSize(event)">
+      <h2>Rak</h2>
+      <p>Prívesok na náramok znamenia rak</p>
+      <span>0.80€</span>
+      <button class="addToCartButton">Přidat do kitu</button>
+    </section>
+    <section class="product">
+      <img src="img/lev.png" alt="Lev"onclick="toggleImageSize(event)">
+      <h2>Lev</h2>
+      <p>Prívesok na náramok znamenia lev</p>
+      <span>0.80€</span>
+      <button class="addToCartButton">Přidat do kitu</button>
+    </section>
+    <section class="product">
+      <img src="img/panna.png" alt="Panna"onclick="toggleImageSize(event)">
+      <h2>Panna</h2>
+      <p>Prívesok na náramok znamenia panna</p>
+      <span>0.80€</span>
+      <button class="addToCartButton">Přidat do kitu</button>
+    </section>
+    <section class="product">
+      <img src="img/vaha.png" alt="Váha"onclick="toggleImageSize(event)">
+      <h2>Váha</h2>
+      <p>Prívesok na náramok znamenia váhy</p>
+      <span>0.80€</span>
+      <button class="addToCartButton">Přidat do kitu</button>
+    </section>
+    <section class="product">
+      <img src="img/skorpion.png" alt="Škorpión"onclick="toggleImageSize(event)">
+      <h2>Škorpión</h2>
+      <p>Prívesok na náramok znamenia škorpión</p>
+      <span>0.80€</span>
+      <button class="addToCartButton">Přidat do kitu</button>
+    </section>
+    <section class="product">
+      <img src="img/strelec.png" alt="Strelec"onclick="toggleImageSize(event)">
+      <h2>Strelec</h2>
+      <p>Prívesok na náramok znamenia strelec</p>
+      <span>0.80€</span>
+      <button class="addToCartButton">Přidat do kitu</button>
+    </section>
+    <section class="product">
+      <img src="img/kozoroh.png" alt="Kozorožec"onclick="toggleImageSize(event)">
+      <h2>Kozorožec</h2>
+      <p>Prívesok na náramok znamenia kozorožec</p>
+      <span>0.80€</span>
+      <button class="addToCartButton">Přidat do kitu</button>
+    </section>
+    <section class="product">
+      <img src="img/vodnar.png" alt="Vodnár"onclick="toggleImageSize(event)">
+      <h2>Vodnár</h2>
+      <p>Prívesok na náramok znamenia vodnár</p>
+      <span>0.80€</span>
+      <button class="addToCartButton">Přidat do kitu</button>
+    </section>
+    <section class="product">
+      <img src="img/ryba.png" alt="Ryba"onclick="toggleImageSize(event)">
+      <h2>Ryba</h2>
+      <p>Prívesok na náramok znamenia ryba</p>
+      <span>0.80€</span>
+      <button class="addToCartButton">Přidat do kitu</button>
+    </section>
+  </section>
+</main>
+  <script src="script.js"></script>
+  <script src="server.js"></script>
+
   <footer>
     <p>&copy; 2024 CroKit</p>
   </footer>

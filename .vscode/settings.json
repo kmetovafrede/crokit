@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 100,
+            "driver": "SQLite",
+            "name": "eshop.db",
+            "database": "\\\\wsl.localhost\\Ubuntu\\home\\lisalisa\\crokit\\eshop.db"
+        }
+    ],
+    "sqltools.useNodeRuntime": true,
+    "dataworkspace.excludedProjects": [
+        "frederyka@gmail.com/frederyka@gmail.com.sqlproj"
+    ]
+}

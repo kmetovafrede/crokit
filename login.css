@@ -1,0 +1,195 @@
+:root{
+    --title: #dc9d65;
+    --background: #fbdaba;
+    --bg-title: #ffedda;
+    --window: #ffeedc;
+    --white: #ffffff;
+    --black: #000000;
+  
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+}
+
+header {
+    background-color: var(--bg-title);
+    color: var(--title);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Broadway';
+    font-size: 40px;
+}
+
+.login {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background);
+  }
+  
+  .login-container {
+    background-color: var(--window);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px; /* Adjust this value as needed */
+    margin: auto; /* Center the login box horizontally */
+}
+
+  
+  .login-form {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  
+#menu-btn {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    position: fixed;
+    top: 3px;
+    left: 20px;
+    position: absolute;
+}
+
+.menu-content {
+    display: block;
+    position: fixed;
+    top: -105%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--window);
+    border: 1px solid #ccc;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    transition: top 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-content.active {
+    top: 0;
+}
+
+.menu-content li {
+    padding: 10px;
+}
+
+.menu-content a {
+    text-decoration: none;
+    color: (var(--title));
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.menu-content a:hover {
+    background-color: #f0f0f0;
+}
+
+
+button {
+    background-color: #e38e57;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c3764e;
+}
+
+footer {
+    background-color: var(--bg-title);
+    color: var(--title);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.signup-button {
+    background-color: #e38e57;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 155px;
+    margin-top: 20px;
+}
+
+.signup-button:hover {
+    background-color: #c3764e;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

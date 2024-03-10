@@ -1,77 +1,228 @@
+:root{
+    --title: #dc9d65;
+    --background: #fbdaba;
+    --bg-title: #ffedda;
+    --window: #ffeedc;
+    --white: #ffffff;
+    --black: #000000;
+  
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    background-color: var(--background);
+}
+
+header {
+    background-color: var(--bg-title);
+    color: var(--title);
+    padding: 20px 0;
     text-align: center;
-  }
-  
-  nav ul {
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Broadway';
+    font-size: 40px;
+}
+
+#menu-btn {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    position: fixed;
+    top: 3px;
+    left: 20px;
+    position: absolute;
+}
+
+.menu-content {
+    display: block;
+    position: fixed;
+    top: -200%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--window);
+    border: 1px solid #ccc;
     list-style-type: none;
     padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  main {
-    padding: 20px;
+    margin: 0;
+    z-index: 1000;
+    transition: top 0.5s ease;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .product {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .product img {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 10px;
-  }
-  
-  .product h2 {
-    margin-top: 0;
-  }
-  
-  .product span {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-content.active {
+    top: 0;
+}
+
+.menu-content li {
+    padding: 10px;
+}
+
+.menu-content a {
+    text-decoration: none;
+    color: (var(--title));
     font-weight: bold;
-  }
-  
-  button {
-    background-color: #4CAF50;
+    font-size: 30px;
+}
+
+.menu-content a:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--window);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s; /* Add transition for smooth scaling */
+}
+
+.product img:hover {
+    transform: scale(1.4); /* Increase the size by 10% on hover */
+}
+
+
+
+.product h2 {
+    margin-top: 0;
+}
+
+.product span {
+    font-weight: bold;
+}
+
+button {
+    background-color: #e38e57;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c3764e;
+}
+
+footer {
+    background-color: var(--bg-title);
+    color: var(--title);
     text-align: center;
-    padding: 10px;
+    padding: 10px 0;
+}
+
+
+.notification {
     position: fixed;
-    bottom: 0;
-    width: 100%;
+    top: 20px;
+    right: 20px;
+    background-color:var(--title);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(61, 61, 61, 0.9);
+    transition: opacity 0.5s ease-in-out;
   }
   
+
+
+
+  .featured-products,
+  .pets-collection,
+  .zodiac-signs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;    
+      padding-left: 90px;
+      padding-right: 90px;
+      margin-bottom: 30px;
+      padding-top: 30px;
+  }
+
+  .featured-products h2,
+  .pets-collection h2,
+  .zodiac-signs h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: var(--black);
+    font-size: 20px;
+  }
+
+  body h2 {
+    font-size: 40px;
+    color: var(--title);
+    text-align: center; /* Center the text horizontally */
+    margin: 0; /* Remove default margin */
+    padding-top: 30px;
+}
+
+.privesky  {
+    display: flex;
+    flex-direction: column; /* Align items in a column direction */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+.privesky img {
+    width: 170px;
+    height: auto;
+    margin-bottom: 10px;
+    float: right; /* Float the image to the right */
+}
+
+.privesky p{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left; /* Align text to the left */
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    
+    .privesky p{
+        font-size: 20px;
+    }
+    .featured-products,
+  .pets-collection,
+  .zodiac-signs {
+      padding-left: 0;
+      padding-right: 0;
+  }
+
+  main {
+        padding: 0 30px;
+  }
+
+  .product img.enlarge {
+    transform: scale(1.1); /* Increase the size by 10% */
+}
+}

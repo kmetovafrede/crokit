@@ -1,0 +1,122 @@
+:root{
+    --title: #dc9d65;
+    --background: #fbdaba;
+    --bg-title: #ffedda;
+    --window: #ffeedc;
+    --white: #ffffff;
+    --black: #000000;
+  
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+}
+
+header {
+    background-color: var(--bg-title);
+    color: var(--title);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Broadway';
+    font-size: 40px;
+}
+
+#menu-btn {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    position: fixed;
+    top: 3px;
+    left: 20px;
+    position: absolute;
+}
+
+.menu-content {
+    display: block;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--window);
+    border: 1px solid #ccc;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    transition: top 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-content.active {
+    top: 0;
+}
+
+.menu-content li {
+    padding: 10px;
+}
+
+.menu-content a {
+    text-decoration: none;
+    color: (var(--title));
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.menu-content a:hover {
+    background-color: #f0f0f0;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-box {
+    background-color: var(--window);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 90vw; /* Adjust width as needed */
+    max-width: 500px; /* Limit maximum width */
+    height: 90vh; /* Adjust height as needed */
+    max-height: 500px; /* Limit maximum height */
+    overflow: auto; /* Add overflow for content scrolling */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-box h2 {
+    font-weight: bold;
+    color: var(--title);
+    font-size: 30px;
+}
+
+.contact-box p {
+    margin: 10px 0; /* Add some space between paragraphs */
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer {
+    background-color: var(--bg-title);
+    color: var(--title);
+    text-align: center;
+    padding: 10px 0;
+}
