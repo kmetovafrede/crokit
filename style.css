@@ -226,20 +226,5 @@ footer {
     transform: scale(1.1); /* Increase the size by 10% */
     }
 
-    .menu-content {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        align-items: center; /* Center items vertically */
-        text-align: center; /* Center text horizontally */
-
-    }
-
-    .menu-content li {
-        padding-bottom: 20px;
-        display: block; /* Ensure each menu item occupies a separate line */
-
-    }
-    
+   
 }
